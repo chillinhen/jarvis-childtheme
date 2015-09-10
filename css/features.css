@@ -1,0 +1,187 @@
+/*---------------------------
+FEATURE SECTION _____________*/
+.feature-item .img-container img{
+    opacity:0 !important;
+}
+
+@media only screen and (max-width: 667px){
+	#features-wrap{
+		width:250px;
+		margin: 0 auto;
+	}
+	.feature-item{
+		margin: 0 !important;
+	}
+	.feature-item .img-container{
+		background-position: top center;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		max-height: 465px;
+		min-height: 390px;
+		margin-top: -20px;
+		margin-bottom: -20px;
+	}
+	.feature-item:first-child .img-container{
+		background-image: url("../images/features/kunstsaite_mobile.svg");
+	}
+	.feature-item:nth-child(2) .img-container{
+		background-image: url("../images/features/monofilament_mobile.svg");
+	}
+	.feature-item:nth-child(3) .img-container{
+		background-image: url("../images/features/co-poly-saite_mobile.svg");
+	}
+	.feature-item:last-child .img-container{
+		background-image: url("../images/features/durchmesser_mobile.svg");
+	}
+	.feature-item .team-overlay{
+		display: block !important;
+		top: 0 !important;
+	}
+	.feature-item .team-overlay .overlay-content{
+		opacity: 1 !important;
+		top: 280px !important;
+	}
+	.feature-item:first-child .team-overlay .overlay-content{
+		top: 260px !important;
+	}
+	.feature-item .img-overlay{
+		display: none;
+	}
+	.feature-item .feature-caption{
+		position: absolute;
+		top: 50px;
+		left: 0;
+		width: 100%;
+		background: transparent !important;
+		border: 0 !important;
+		padding: 0 !important;
+	}
+	.feature-item:first-child .feature-caption{
+		top: 30px;
+	}
+	.feature-item .feature-caption h4{
+		color: #fff;
+		font-size: 22px !important;
+		
+	}
+}
+@media only screen and (min-width: 668px){
+	#features-wrap{
+		margin-left: 40px;
+		margin-right: -60px;
+	}
+
+	.feature-item{
+		width: 25% !important;
+		margin:0 0 0 -20px !important;	
+	}
+	.feature-item .img-container{
+		background-position: 50% 50%;
+		background-size: 100%;
+	}
+	.feature-item:hover{
+	cursor: pointer;
+	z-index: 999 !important;
+	}
+	.feature-item .img-container{
+	overflow: hidden;
+	background-color:transparent;
+	background-repeat: no-repeat;
+	}
+	.feature-item:first-child .img-container{
+		background-image: url("../images/features/kunstsaite.svg");
+	}
+	.no-svg .feature-item:first-child .img-container{
+		background-image: url("../images/features/kunstsaite.png");
+	}
+	.feature-item:nth-child(2) .img-container{
+		background-image: url("../images/features/monofilament.svg");
+	}
+	.no-svg .feature-item:nth-child(2) .img-container{
+		background-image: url("../images/features/monofilament.png");
+	}
+	.feature-item:nth-child(3) .img-container{
+		background-image: url("../images/features/co-poly-saite.svg");
+	}
+	.no-svg .feature-item:nth-child(3) .img-container{
+		background-image: url("../images/features/co-poly-saite.png");
+	}
+	.feature-item:last-child .img-container{
+		background-image: url("../images/features/durchmesser.svg");
+	}
+	.no-svg .feature-item:last-child .img-container{
+		background-image: url("../images/features/durchmesser.png");
+	}
+	.feature-item .img-overlay {
+	background-color: transparent;
+	background-position:center center;
+	background-repeat: no-repeat;
+	}
+	
+	.feature-item:first-child .img-overlay{
+	background-image: url("../images/features/kunstsaite_hover.svg");
+	}
+	.no-svg .feature-item:first-child .img-overlay{
+	background-image: url("../images/features/kunstsaite_hover.png");
+	}
+	.feature-item:nth-child(2) .img-overlay{
+	background-image: url("../images/features/monofilament_hover.svg");
+	}
+	.no-svg .feature-item:nth-child(2) .img-overlay{
+	background-image: url("../images/features/monofilament_hover.png");
+	}
+	.feature-item:nth-child(3) .img-overlay{
+	background-image: url("../images/features/co-poly-saite_hover.svg");
+	}
+	.no-svg .feature-item:nth-child(3) .img-overlay{
+	background-image: url("../images/features/co-poly-saite_hover.png");
+	}
+	.feature-item:last-child .img-overlay{
+	background-image: url("../images/features/durchmesser_hover.svg");
+	}
+	.no-svg .feature-item:last-child .img-overlay{
+	background-image: url("../images/features/durchmesser_hover.png");
+	}
+}
+.feature-item:focus {
+	outline: none;
+}
+.feature-item:hover .feature-caption,
+.feature-item:active .feature-caption,
+.feature-item:focus .feature-caption,
+.feature-item:visited .feature-caption{
+		background: transparent !important;
+}
+.feature-item:visited .feature-caption h4,
+.feature-item:focus .feature-caption h4,
+.feature-item:active .feature-caption h4,
+.feature-item:hover .feature-caption h4{
+	color: #000 !important;
+}
+.feature-item h4{
+	font-family: 'Oswald', sans-serif;
+}
+.feature-item .overlay-content h4{
+    color: #fff; 
+}
+.feature-item .overlay-content p,
+.feature-item .overlay-content a{
+	background: transparent;
+	margin:0;
+	padding: 0;
+}
+.feature-item .overlay-content a:after{
+	content:' ';
+	background: transparent url("../images/features/icon-info.svg") center center no-repeat;
+	height: 24px;
+	width: 24px;
+	overflow: hidden;
+	display: block;
+	margin: 0px auto;
+}
+no-svg .feature-item .overlay-content a:after{
+	background-image: url("../images/features/icon-info.png");
+}
+.feature-item .overlay-content a span{
+    display: none;
+}
